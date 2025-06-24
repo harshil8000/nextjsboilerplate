@@ -5,6 +5,7 @@ export const getToken = (state: any) => {
   return state.auth?.token ?? null;
 };
 
+
 export const http = (isServer: any = undefined): BaseQueryFn<any> => {
   if (typeof isServer === "undefined") {
     isServer = typeof window === "undefined";
